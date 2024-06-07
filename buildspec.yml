@@ -18,7 +18,7 @@ phases:
       
   build:
     commands:
-      - docker build -t 800103408648.dkr.ecr.us-east-1.amazonaws.com/hello-docker-image:latest .
+      - docker build -t 992382730356.dkr.ecr.us-east-1.amazonaws.com/hello-docker-image:latest .
       #- trivy image --quiet --severity HIGH,CRITICAL --format template --template "@trivy_templates/html.tpl" -o $fecha.html 992382730356.dkr.ecr.us-east-1.amazonaws.com/hello-docker-image:latest
       #- aws s3 cp $fecha.html s3://trivy-vulnerabilities-reports   
       - docker push 992382730356.dkr.ecr.us-east-1.amazonaws.com/hello-docker-image:latest
